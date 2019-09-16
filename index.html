@@ -2,16 +2,15 @@
 <html>
 
 <head>
-        <title>Practicing Git in CSC 426 at Berea College</title>
+        <title>Natasha Stallsmith</title>
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 	<script src="poem.js"></script>
 </head>
 
 <body>
-        <div class="section" id="plan">
+        <div class="section" id="about">
                 <h1>Natasha Stallsmith</h1>
-         
-                <img src="closeup.jpg" width = "30%" style="padding: 0 15px; float: left;" />
+                <img src="closeup.jpg" width = "25%" style="padding: 0 15px; float: left;" />
              
 
                 <h2>About Me</h2>
@@ -27,12 +26,29 @@
 				<p>
 				<li><a href="Resume_09_11_19.pdf">Resume</a>
 				<li><a href="https://github.com/natstall">GitHub profile</a><br /></li>
-				<li><a href="https://www.linkedin.com/in/natasha-stallsmith/">LinkedIn Profile</a><br /></li>
-				<li><a href="https://natcsc426.home.blog">Blog for my Open Source Course</a></li>
+				<li><a href="https://www.linkedin.com/in/natasha-stallsmith/">LinkedIn profile</a><br /></li>
+				<li><a href="https://natcsc426.home.blog">Blog for my open source course</a></li>
                 </p>
                 </ul>
 
         </div>
+		
+		<div class ="section" id="button">
+				<p>
+				
+				
+				Click the button to find out one of my favorite shows.</p>
+
+				<button onclick="myFunction()">Click me!</button>
+
+				<script>
+				function myFunction() {
+				  var myArray = ["Supernatural", "Prison Break", "Buffy the Vampire Slayer", "Dollhouse", "The 100", "Daredevil",
+				  "Stranger Things", "Shameless", "The Marvelous Mrs. Maisel"];
+				  var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+				  alert(randomItem);
+				}
+				</script>
 
 </body>
 
