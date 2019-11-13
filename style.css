@@ -30,20 +30,21 @@ html, body {
 body{
 	font: 130%/1.3 TrebuchetMS,Arial,sans-serif;  /* Default fonts */
 	text-align: left; /* Alignment of the text */
-	color: black; /* Main text color */
-	background: #CEAFDB; /* Main text background color */
+	color: var(--font-color); /* Main text color */
+	background: var(--inner-bg-color); /* Main text background color */
 	padding-bottom: 20px; /* You can set padding or margin for one side of an element at a time */
 }
 
 a {                  /* A stands for link, so this section is setting the default characteristics of links. */
-	color: purple;
+	color: var(--links);
 	text-decoration: none;
 }
 
 h1 {		     /* This styles the header at the top of the page */
 	font: bold 2.1em 'Source Sans Pro',Arial, Sans-Serif;
+	display: inline-block;
 	text-align: left;
-	color: black;
+	color: var(--font-color);
 }
 
 h2 {		     /* This styles the headers within the page */
@@ -61,15 +62,15 @@ div.section {
 
 /* This alters the appearance of the div with id="about". */
 #about {
-	background: #bdffdf; /* Change the color to looks like Berea Background */
-	color: black;
+	background: var(--bg-color); 
+	color: var(--font-color);
 	font: 'Source Sans Pro',Arial, Sans-Serif;
 	background-image: none;  /* replace none with url('image-url') to set a background image  */
 }
 
 /* You can alter the links within a div with the following syntax */
 #about a {
-	color: green;
+	color: var(--links);
 }
 
 /* This alters the appearance of the div with id="button". */
@@ -81,12 +82,40 @@ button {
   margin-top: 20px;
   line-height: 60px;
   font-weight: bold;
-  padding: 0 40px;
-  background: #9B59B6;
+  padding: 0 24px;
+  background: var(--button-color);
   border: none;
 }
 button:hover {
-  background: #A569BD;
+  background: var(--button-hover);
+}
+
+.button2 {
+  float: right;
+  display: inline-block;
+  padding: 0px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  background: var(--button-color);
+  border: none;
+}
+
+:root {
+    --bg-color: #bdffdf;
+	--inner-bg-color: #CEAFDB;
+	--links: green;
+	--button-color: #9B59B6;
+	--button-hover: #A569BD;
+	--font-color: black;
+}
+
+[data-theme="dark"] {
+	--bg-color: #330080;
+	--inner-bg-color: black;
+	--links: #248aff;
+	--button-color: #008cff;
+	--button-hover: #1f9aff;
+	--font-color: #add3ff;
 }
 
 </pre>

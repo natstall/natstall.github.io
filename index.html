@@ -4,13 +4,15 @@
 <head>
         <title>Natasha Stallsmith</title>
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-	<script src="poem.js"></script>
+	<script src="button.js"></script>
 </head>
 
 <body>
+		
         <div class="section" id="about">
                 <h1>Natasha Stallsmith</h1>
-                <img src="closeup.jpg" width = "25%" style="padding: 0 15px; float: left;" />
+				<button class="button button2" onclick="dark()">Dark Mode</button>
+                <img src="closeup.jpg" width = "30%" style="padding: 0 15px; float: left;" />
              
 
                 <h2>About Me</h2>
@@ -36,19 +38,10 @@
 		<div class ="section" id="button">
 				<p>
 				
-				
 				Click the button to find out one of my favorite shows.</p>
 
-				<button onclick="myFunction()">Click me!</button>
-
-				<script>
-				function myFunction() {
-				  var myArray = ["Supernatural", "Prison Break", "Buffy the Vampire Slayer", "Dollhouse", "The 100", "Daredevil",
-				  "Stranger Things", "Shameless", "The Marvelous Mrs. Maisel"];
-				  var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
-				  alert(randomItem);
-				}
-				</script>
+				<button onclick="shows()">Click me!</button>
+		</div>
 
 </body>
 
